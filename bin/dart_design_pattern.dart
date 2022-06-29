@@ -2,6 +2,8 @@
 
 // import 'dart:html';
 
+import 'dart:io';
+
 import 'Singletone/singletone_design_pattern.dart';
 import 'State_design_pattern/atm_machine.dart';
 import 'chain_of_resposibilty/email_filter_builder.dart';
@@ -9,6 +11,9 @@ import 'chain_of_resposibilty/emial_filter.dart';
 import 'composite/file.dart';
 import 'composite/file_system.dart';
 import 'composite/folder.dart';
+import 'observer_design_pattern/subscriber.dart';
+import 'observer_design_pattern/video.dart';
+import 'observer_design_pattern/youtube.dart';
 import 'protection_design_pattern/isp.dart';
 import 'protection_design_pattern/proxy.dart';
 import 'visitor_design_pattern/Ivisitor.dart';
@@ -80,13 +85,28 @@ void main(List<String> arguments) {
 // message.getPrice(secondOffer);
 
 //proxy
-Proxy proxytarassul = new Proxy();
-print(proxytarassul.getResourse("www.facebook.com"));
-print(proxytarassul.getResourse("www.twiter.com"));
-print(proxytarassul.getResourse("www.google.com"));
+// Proxy proxytarassul = new Proxy();
+// print(proxytarassul.getResourse("www.facebook.com"));
+// print(proxytarassul.getResourse("www.twiter.com"));
+// print(proxytarassul.getResourse("www.google.com"));
 
-proxytarassul.blockSite("www.facebook.com");
-print(proxytarassul.getResourse("www.facebook.com"));
+// proxytarassul.blockSite("www.facebook.com");
+// print(proxytarassul.getResourse("www.facebook.com"));
+
+//observer
+// YoutubeChannel mess = new YoutubeChannel("messi");
+// Subscriber s1 = new Subscriber("mayssam", 23);
+// Subscriber s2 = new Subscriber("manaf", 22);
+// mess.register(s1);
+// mess.register(s2);
+// Video video = new Video("goal", "football");
+// mess.addVideo(video);
+// print("Enter your name : ");
+// // stdout.write("Enter your name :");
+// String? name = stdin.readLineSync();
+// print("ypur name is $name");
+
+
 
 
 }
